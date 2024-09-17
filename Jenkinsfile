@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/juan230500/microservices-cd-orchestrator.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'docker-compose build'
