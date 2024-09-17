@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  service1:
+    build: ./service1
+    ports:
+      - "5001:5000"
+    environment:
+      - SERVICE_NAME=Service1
+
+  service2:
+    build: ./service2
+    ports:
+      - "5002:5000"
+    environment:
+      - SERVICE_NAME=Service2
+
+  service3:
+    build: ./service3
+    ports:
+      - "5003:5000"
+    environment:
+      - SERVICE_NAME=Service3
